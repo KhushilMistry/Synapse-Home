@@ -2,14 +2,15 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
     <title>Synapse Home</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script type="text/javascript" src="js/amplitude.js"></script>
     <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/amplitude.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <style>
         .home-cover {
-            background: url(6.jpg) no-repeat center center;
+            background: url(5.jpg) no-repeat center center;
             -webkit-background-size: cover;
             -moz-background-size: cover;
             -o-background-size: cover;
@@ -36,6 +37,8 @@
         .cover-info {
             margin-left: 50px;
             margin-top: 25px;
+            margin-right: -10px;
+            margin-bottom: 0px;
             color: white;
         }
 
@@ -47,7 +50,7 @@
 
         .cover-info h3 {
             font-size: 1.9em;
-            padding: 0 0 10px;
+            /* padding: 0 0 10px */
             font-weight: lighter;
             letter-spacing: 1.5px;
         }
@@ -55,7 +58,7 @@
         .cover-info p {
             letter-spacing: 0.1px;
             font-size: 1.1em;
-            padding: 0 0 10px;
+            /* padding: 0 0 10px; */
         }
 
         .btn-lg {
@@ -86,11 +89,13 @@
             padding: 60px;
             color: white;
         }
+
         .info-2 {
             height: 600px;
             padding: 60px;
             color: white;
         }
+
         #t1 {
             background: url(5.jpg) no-repeat center center;
             -webkit-background-size: cover;
@@ -101,6 +106,30 @@
 
         #t2 {
             background: url(2.jpg) no-repeat center center;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+        }
+
+        #t3 {
+            background: url(1.jpeg) no-repeat center center;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+        }
+
+        #t4 {
+            background: url(6.jpg) no-repeat center center;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+        }
+
+        #t5 {
+            background: url(bike.jpg) no-repeat center center;
             -webkit-background-size: cover;
             -moz-background-size: cover;
             -o-background-size: cover;
@@ -120,7 +149,7 @@
         .info-content {
             letter-spacing: 0.1px;
             font-size: 1.1em;
-            padding: 0 0 10px;
+            /* padding: 0 0 10px; */
         }
 
         .info-subheading {
@@ -136,8 +165,8 @@
         }
 
         .bott {
-            color: #282828;
             border-radius: 22px;
+            color: #282828;
             width: 150px;
             height: 40px;
             padding: 0px;
@@ -146,12 +175,14 @@
             font-weight: bold;
             background-color: white;
             border-color: white;
+            border: 0px;
+            shadow: 0px;
         }
 
         .bott:hover {
+            color: white;
             background-color: #16e58a;
             border-color: #16e58a;
-            color: white;
             -webkit-transition: all 500ms ease;
             -moz-transition: all 500ms ease;
             -ms-transition: all 500ms ease;
@@ -159,15 +190,24 @@
             transition: all 500ms ease;
         }
 
+        html, body {
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: 0px;
+            padding: 0px;
+        }
 
         @media only screen and (max-width: 768px) {
             /* For mobile phones: */
-            .info-1{
+            .info-1 {
                 width: 100%;
                 height: 700px;
                 padding: 20px;
             }
-            .info-2{
+
+            .info-2 {
                 width: 100%;
                 height: 600px;
                 padding: 20px;
@@ -307,158 +347,158 @@
 
 </head>
 <body>
-<div class="fluid-container">
-    <div class="home-cover" style="height: 100%;">
-        <div class="tint">
-            <div class="row ">
-                <div class="col-lg-6 col-md-12 col-sm-12 home-content">
-                    <div class="row">
-                        <div class="col-lg-10 col-md-12 col-sm-12 cover-heading">
-                            <img src="font.svg" width="100%">
-                        </div>
+<div class="home-cover fluid-container" style="height: 100%;width: 100%; ">
+    <div class="container-fluid">
+        <div class="row ">
+            <div class="col-lg-6 col-md-12 col-sm-12 home-content">
+                <div class="row">
+                    <div class="col-lg-10 col-md-12 col-sm-12 cover-heading">
+                        <img src="font.svg" width="100%">
                     </div>
-                    <div class="row">
-                        <div class="col-lg-12 visible-lg player">
-                            <div id="small-player">
-                                <div id="small-player-left">
+                </div>
+                <div class="row">
+                    <div class="col-lg-12 visible-lg player">
+                        <div id="small-player">
+                            <div id="small-player-left">
 
-                                </div>
-                                <img id="small-player-album-art" amplitude-song-info="cover"/>
-                                <div id="small-player-middle">
-                                    <div id="small-player-middle-top">
-                                        <div id="small-player-middle-controls">
-                                            <div class="amplitude-play-pause amplitude-paused"
-                                                 amplitude-main-play-pause="true"></div>
-                                        </div>
-                                        <div id="small-player-middle-meta">
-                                            <div id="now-playing-title" amplitude-song-info="name"></div>
-                                            <div class="album-information"><span amplitude-song-info="artist"></span> -
-                                                <span
-                                                        amplitude-song-info="album"></span></div>
-                                        </div>
+                            </div>
+                            <img id="small-player-album-art" amplitude-song-info="cover"/>
+                            <div id="small-player-middle">
+                                <div id="small-player-middle-top">
+                                    <div id="small-player-middle-controls">
+                                        <div class="amplitude-play-pause amplitude-paused"
+                                             amplitude-main-play-pause="true"></div>
                                     </div>
-
-                                    <div id="small-player-middle-bottom">
-                                        <div class="amplitude-song-time-visualization"
-                                             amplitude-single-song-time-visualization="true"
-                                             id="song-time-visualization"></div>
+                                    <div id="small-player-middle-meta">
+                                        <div id="now-playing-title" amplitude-song-info="name"></div>
+                                        <div class="album-information"><span amplitude-song-info="artist"></span> -
+                                            <span
+                                                    amplitude-song-info="album"></span></div>
                                     </div>
                                 </div>
-                                <div id="small-player-right">
+
+                                <div id="small-player-middle-bottom">
+                                    <div class="amplitude-song-time-visualization"
+                                         amplitude-single-song-time-visualization="true"
+                                         id="song-time-visualization"></div>
+                                </div>
+                            </div>
+                            <div id="small-player-right">
 				<span id="current-time">
 					<span class="amplitude-current-minutes" amplitude-single-current-minutes="true">0</span>:<span
                         class="amplitude-current-seconds" amplitude-single-current-seconds="true">00</span>
 				</span>
-                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="row cover-info">
-                        <h2>CYNASOUR</h2>
-                        <h3>PRESENTS <strong>GENERATIONWHY</strong></h3>
-                        <p>Dropped 5 months ago</p>
-                        <button type="button" class="btn btn-primary btn-lg">VIEW DROP</button>
+                </div>
+                <div class="row cover-info">
+                    <h2>CYNASOUR</h2>
+                    <h3>PRESENTS <strong>GENERATIONWHY</strong></h3>
+                    <p>Dropped 5 months ago</p>
+                    <button type="button" class="btn btn-primary btn-lg">VIEW DROP</button>
+                </div>
+            </div>
+            <div class="visible-lg col-lg-6">
+                <div class="row home-content">
+                    <div class="col-lg-2">
+                        <img class="visible-lg img-circle home-icon" id="img3" src="bike.jpg" height="120"
+                             width="120"
+                             style="position:absolute; top:150px">
+                    </div>
+                    <div class="col-lg-2">
+                        <img class="visible-lg img-circle home-icon" id="img2" src="bike.jpg" height="100"
+                             width="100"
+                             style="position:absolute; top:-10px">
+                    </div>
+                    <div class="col-lg-offset-3 col-lg-4">
+                        <img class="visible-lg img-circle home-icon" id="img1" src="bike.jpg" height="150"
+                             width="150"
+                             style="position:absolute; top:80px">
                     </div>
                 </div>
-                <div class="visible-lg col-lg-6">
-                    <div class="row home-content">
-                        <div class="col-lg-2">
-                            <img class="visible-lg img-circle home-icon" id="img3" src="bike.jpg" height="120"
-                                 width="120"
-                                 style="position:absolute; top:150px">
-                        </div>
-                        <div class="col-lg-2">
-                            <img class="visible-lg img-circle home-icon" id="img2" src="bike.jpg" height="100"
-                                 width="100"
-                                 style="position:absolute; top:-10px">
-                        </div>
-                        <div class="col-lg-offset-3 col-lg-4">
-                            <img class="visible-lg img-circle home-icon" id="img1" src="bike.jpg" height="150"
-                                 width="150"
-                                 style="position:absolute; top:80px">
-                        </div>
+                <div class="row">
+                    <div class="col-lg-offset-2 col-lg-4">
+                        <img class="visible-lg img-circle home-icon" id="img4" src="bike.jpg" height="150"
+                             width="150"
+                             style="position:absolute; top:360px;z-index: 0;">
                     </div>
-                    <div class="row">
-                        <div class="col-lg-offset-2 col-lg-4">
-                            <img class="visible-lg img-circle home-icon" id="img4" src="bike.jpg" height="150"
-                                 width="150"
-                                 style="position:absolute; top:360px;z-index: 0;">
-                        </div>
-                        <div class="col-lg-4">
-                            <img class="visible-lg img-circle home-icon" id="img5" src="bike.jpg" height="130"
-                                 width="130"
-                                 style="position:absolute; top:300px">
-                        </div>
+                    <div class="col-lg-4">
+                        <img class="visible-lg img-circle home-icon" id="img5" src="bike.jpg" height="130"
+                             width="130"
+                             style="position:absolute; top:300px">
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div>
-        <div class="row">
-            <div class="col-lg-8 info-1" id="t1">
-                <div class="head-info">
-                    <div class="info-heading">
-                        <h2>Inagural Night</h2>
-                    </div>
-                    <div class="row">
-                        <div class="col-lg-9">
-                            <p class="info-content">Dropped 5 months ago</p>
-                            <h2 class="info-subheading">Behind ZHU's GENERATIONWHY: Part 3</h2>
-                            <p class="info-content2">Lyric sheets handwritten by Hunter for songs from the 21 EP.</p>
-                        </div>
-                    </div>
-                    <button type="button" class="bott center-block">VIEW DROP</button>
+</div>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-8 info-1" id="t1">
+            <div class="head-info">
+                <div class="info-heading">
+                    <h2>Inagural Night</h2>
                 </div>
-                <div class="col-lg-3 info-2">
-                </div>
-            </div>
-            <div class="col-lg-4 col-sm-12 info-2" id="t2">
-                <div class="head-info">
-                    <div class="info-heading2">
-                        <h2>Inagural Night</h2>
+                <div class="row">
+                    <div class="col-lg-9">
+                        <p class="info-content">Dropped 5 months ago</p>
+                        <h2 class="info-subheading">Behind ZHU's GENERATIONWHY: Part 3</h2>
+                        <p class="info-content2">Lyric sheets handwritten by Hunter for songs from the 21 EP.</p>
                     </div>
-                    <p class="info-content">Dropped 5 months ago</p>
-                    <h2 class="info-subheading">Behind ZHU's HEY</h2>
-                    <p class="info-content2">Lyric sheets handwritten by Hunter for songs from the 21 EP.</p>
                 </div>
                 <button type="button" class="bott center-block">VIEW DROP</button>
+            </div>
+            <div class="col-lg-3 info-2">
             </div>
         </div>
-        <div class="row">
-            <div class="col-lg-4 info-2" id="t2">
-                <div class="head-info">
-                    <div class="info-heading2">
-                        <h2>Inagural Night</h2>
-                    </div>
-                    <p class="info-content">Dropped 5 months ago</p>
-                    <h2 class="info-subheading">Behind ZHU's HEY</h2>
-                    <p class="info-content2">Lyric sheets handwritten by Hunter for songs from the 21 EP.</p>
+        <div class="col-lg-4 col-sm-12 info-2" id="t2">
+            <div class="head-info">
+                <div class="info-heading2">
+                    <h2>Inagural Night</h2>
                 </div>
-                <button type="button" class="bott center-block">VIEW DROP</button>
+                <p class="info-content">Dropped 5 months ago</p>
+                <h2 class="info-subheading">Behind ZHU's HEY</h2>
+                <p class="info-content2">Lyric sheets handwritten by Hunter for songs from the 21 EP.</p>
             </div>
-            <div class="col-lg-4 info-2" id="t2">
-                <div class="head-info">
-                    <div class="info-heading2">
-                        <h2>Inagural Night</h2>
-                    </div>
-                    <p class="info-content">Dropped 5 months ago</p>
-                    <h2 class="info-subheading">Behind ZHU's HEY</h2>
-                    <p class="info-content2">Lyric sheets handwritten by Hunter for songs from the 21 EP.</p>
+            <button type="button" class="bott center-block">VIEW DROP</button>
+        </div>
+    </div>
+</div>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-4 info-2" id="t3">
+            <div class="head-info">
+                <div class="info-heading2">
+                    <h2>Inagural Night</h2>
                 </div>
-                <button type="button" class="bott center-block">VIEW DROP</button>
+                <p class="info-content">Dropped 5 months ago</p>
+                <h2 class="info-subheading">Behind ZHU's HEY</h2>
+                <p class="info-content2">Lyric sheets handwritten by Hunter for songs from the 21 EP.</p>
             </div>
-            <div class="col-lg-4 info-2" id="t2">
-                <div class="head-info">
-                    <div class="info-heading2">
-                        <h2>Inagural Night</h2>
-                    </div>
-                    <p class="info-content">Dropped 5 months ago</p>
-                    <h2 class="info-subheading">Behind ZHU's HEY</h2>
-                    <p class="info-content2">Lyric sheets handwritten by Hunter for songs from the 21 EP.</p>
+            <button type="button" class="bott center-block">VIEW DROP</button>
+        </div>
+        <div class="col-md-4 info-2" id="t4">
+            <div class="head-info">
+                <div class="info-heading2">
+                    <h2>Inagural Night</h2>
                 </div>
-                <button type="button" class="bott center-block">VIEW DROP</button>
+                <p class="info-content">Dropped 5 months ago</p>
+                <h2 class="info-subheading">Behind ZHU's HEY</h2>
+                <p class="info-content2">Lyric sheets handwritten by Hunter for songs from the 21 EP.</p>
             </div>
+            <button type="button" class="bott center-block">VIEW DROP</button>
+        </div>
+        <div class="col-md-4 info-2" id="t5">
+            <div class="head-info">
+                <div class="info-heading2">
+                    <h2>Inagural Night</h2>
+                </div>
+                <p class="info-content">Dropped 5 months ago</p>
+                <h2 class="info-subheading">Behind ZHU's HEY</h2>
+                <p class="info-content2">Lyric sheets handwritten by Hunter for songs from the 21 EP.</p>
+            </div>
+            <button type="button" class="bott btn-primary btn-md center-block">VIEW DROP</button>
         </div>
     </div>
 </div>
