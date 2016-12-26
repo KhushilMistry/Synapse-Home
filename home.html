@@ -5,6 +5,7 @@
     <meta name="viewport" content="width-device-width, initial-scale=1.0">
     <title>Synapse Home</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/amplitude.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -221,6 +222,67 @@
             padding: 0px;
         }
 
+        iframe {
+            -webkit-filter: grayscale(50%);
+            filter: grayscale(50%);
+        }
+
+        .footer {
+            padding-top: 20px;
+            padding-bottom: 20px;
+            padding-left: 20px;
+            padding-right: 20px;
+            background-color: black;
+        }
+
+        .footer-link {
+            color: white;
+            padding: 10px;
+            letter-spacing: 1px;
+            font-size: 0.8em;
+        }
+
+        .footer-link:hover {
+            color: red;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .footer-link:active {
+            color: red;
+            text-decoration: none;
+        }
+
+        .footer-icon {
+            float: right;
+            color: white;
+            padding-right: 15px;
+        }
+
+        .footer-icon:hover {
+            color: red;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .footer-icon:active {
+            color: red;
+            text-decoration: none;
+        }
+
+        .padding {
+            padding-top: 20px;
+        }
+
+        .padding-2 {
+            padding-top: 5px;
+        }
+
+        .right {
+            padding-right: 0px;
+            text-align: right;
+        }
+
         @media only screen and (max-width: 768px) {
             /* For mobile phones: */
             .info-1 {
@@ -239,10 +301,22 @@
                 height: 400px;
                 padding: 20px;
             }
-        }
-        iframe{
-            -webkit-filter: grayscale(50%);
-            filter: grayscale(50%);
+
+            .footer-icon {
+                float: none;
+                padding-right: 20px;
+                padding-top: 20px;
+                padding-bottom: 20px;
+                padding-left: 10px;
+            }
+
+            .footer-content {
+                letter-spacing: 2px;
+            }
+
+            .right {
+                text-align: left;
+            }
         }
     </style>
     <link rel="stylesheet" type="text/css" href="css/styles.css"/>
@@ -595,30 +669,72 @@
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3667.499397266079!2d72.62623081500357!3d23.188464115926347!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395c2a3cc01147eb%3A0x2cc22ec547e4caa1!2sDA-IICT!5e0!3m2!1sen!2sin!4v1475283783581"
             width="100%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
 </div>
+<div class="footer">
+    <div class="container-fluid" style="margin-left: -25px;">
+        <div class="row">
+            <div class="col-lg-6 col-md-12">
+                <a class="footer-link" href="#">ABOUT</a>
+                <a class="footer-link" href="#">BLOG</a>
+                <a class="footer-link" href="#">FORUM</a>
+                <a class="footer-link" href="#">API</a>
+                <a class="footer-link" href="#">ADVERTISE</a>
+                <a class="footer-link" href="#">HELP</a>
+                <a class="footer-link" href="#">TERMS</a>
+                <a class="footer-link" href="#">PRIVACY</a>
+            </div>
+            <div class="col-lg-2 col-lg-offset-4 col-md-12 col-sm-12">
+                <i class="fa fa-youtube-play fa-lg footer-icon" aria-hidden="true"></i>
+                <i class="fa fa-facebook fa-lg footer-icon" aria-hidden="true"></i>
+                <i class="fa fa-google-plus fa-lg footer-icon" aria-hidden="true"></i>
+                <i class="fa fa-instagram fa-lg footer-icon" aria-hidden="true"></i>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-md-12 visible-lg">
+                <div class="row padding">
+                    <div class="col-lg-2">
+                        <img src="logo.png" width="54" height="50" style="margin-left: 5px;">
+                    </div>
+                    <div class="col-lg-9" style="padding-top: 10px;margin-left: -10px;">
+                        <p>© 2010-2016 trakt, inc. All rights reserved.<br>Hand crafted in San Diego and the Bay Area.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-offset-5 col-lg-3 col-md-12 col-md-offset-0 visible-lg">
+                <div class="row padding">
+                    <div class="col-lg-9 col-md-9 col-sm-9 padding-2 right">
+                        <p class="footer-content">Shop at Amazone.com<br>to help support us!</p>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3">
+                        <i class="fa fa-amazon fa-3x" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript">
+            Amplitude.init({
+                "songs": [
+                    {
+                        "name": "Rooms",
+                        "artist": "Mia and Jonah",
+                        "album": "Rooms For Adelaide",
+                        "url": "song.mp3",
+                        "live": false,
+                        "cover_art_url": "images/roomsforadelaide.jpg"
+                    }
+                ],
+                "default_album_art": "images/no-cover.png"
+            });
 
-<script type="text/javascript">
-    Amplitude.init({
-        "songs": [
-            {
-                "name": "Rooms",
-                "artist": "Mia and Jonah",
-                "album": "Rooms For Adelaide",
-                "url": "song.mp3",
-                "live": false,
-                "cover_art_url": "images/roomsforadelaide.jpg"
-            }
-        ],
-        "default_album_art": "images/no-cover.png"
-    });
 
-
-    $('#small-player').hover(function () {
-        $('#small-player-middle-controls').show();
-        $('#small-player-middle-meta').hide();
-    }, function () {
-        $('#small-player-middle-controls').hide();
-        $('#small-player-middle-meta').show();
-    });
-</script>
+            $('#small-player').hover(function () {
+                $('#small-player-middle-controls').show();
+                $('#small-player-middle-meta').hide();
+            }, function () {
+                $('#small-player-middle-controls').hide();
+                $('#small-player-middle-meta').show();
+            });
+        </script>
 </body>
 </html>
